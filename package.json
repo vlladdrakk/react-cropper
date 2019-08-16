@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ./",
     "build": "babel ./src/react-cropper.js --out-file dist/react-cropper.js",
-    "install": "mkdir -p dist && ./node_modules/.bin/babel ./src/react-cropper.js --out-file dist/react-cropper.js",
+    "install": "mkdir -p dist && npm install && ./node_modules/.bin/babel ./src/react-cropper.js --out-file dist/react-cropper.js",
     "clean": "rimraf dist && mkdir dist",
     "prepublish": "npm run clean && npm run build",
     "prebuild": "npm run lint",
