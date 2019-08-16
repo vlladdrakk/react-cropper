@@ -4,10 +4,10 @@
   "description": "Cropper as React components",
   "main": "dist/react-cropper.js",
   "scripts": {
+    "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ./",
     "build": "babel ./src/react-cropper.js --out-file dist/react-cropper.js",
-    "install": "npm run build",
     "clean": "rimraf dist && mkdir dist",
     "prepublish": "npm run clean && npm run build",
     "prebuild": "npm run lint",
