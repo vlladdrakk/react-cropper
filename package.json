@@ -10,6 +10,7 @@
     "install": "npm run build",
     "clean": "rimraf dist && mkdir dist",
     "prepublish": "npm run clean && npm run build",
+    "prebuild": "npm run lint",
     "build-example": "npm run build && webpack --config webpack.config.js",
     "start": "node server.js"
   },
